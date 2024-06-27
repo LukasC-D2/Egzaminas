@@ -6,7 +6,7 @@ const AdList = ({ data, currentPage, getAllAds }) => {
         <main className='main'>
             {data?.content?.length === 0 && <div>No Ads. Please add a new ad</div>}
 
-            <ul>
+            <ul className='ad_list'>
                 {data?.content?.length > 0 && data.content.map(ad => <Ad ad={ad} key={ad.id} />)}
             </ul>
 

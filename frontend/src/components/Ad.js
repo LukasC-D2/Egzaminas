@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Ad = ({ ad }) => {
     return (
       <Link to={`/ads/${ad.id}`} >
-              <div>
+              <div className='ad__item'>
                   <div>
                       <p>{ad.title}</p>
                   </div>

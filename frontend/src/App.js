@@ -39,12 +39,7 @@ function App() {
     try {
       const { data } = await saveAd(values);
       const formData = new FormData();
-      // formData.append('file', file, file.name);
-      formData.append('id', data.id);
-      // const { data: photoUrl } = await updatePhoto(formData);
-      // toggleModal(false);
-      // setFile(undefined);
-      // fileRef.current.value = null;
+      formData.append('id', data.id);   
       setValues({
         id: '',
         title: '',
@@ -86,7 +81,6 @@ function App() {
         </div>
       </main>
 
-      {/* Modal */}
       <dialog ref={modalRef} className="modal" id="modal">
         <div className="modal__header">
           <h3>New Ad</h3>
