@@ -20,7 +20,10 @@ public class AdResource {
         return ResponseEntity.created(URI.create("/ads/adID")).body(adService.createAd(ad));
     }
 
-//    @DeleteMapping ResponseEntity<Ad> deleteAd(@RequestBody )
+//    @DeleteMapping("/{id}")
+//    ResponseEntity<Ad> deleteAd(@PathVariable(value = "id") String id){
+//        ResponseEntity.(adService.deleteAd(id));
+//    }
 
     @GetMapping
     public ResponseEntity<Page<Ad>> getAds(@RequestParam(value = "page", defaultValue = "0") int page,

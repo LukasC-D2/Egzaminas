@@ -29,7 +29,7 @@ public class AdService {
         return adRepository.save(ad);
     }
 
-//    public void deleteAd(String id) {
-//        adRepository.deleteById(id);
-//    }
+    public void deleteAd(String id) {
+        adRepository.deleteById(id);
+    }
 }
